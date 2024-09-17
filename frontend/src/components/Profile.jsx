@@ -65,9 +65,9 @@ const Profile = () => {
               <div className='flex flex-col gap-1'>
                 <span className='font-semibold'>{userProfile?.bio || 'bio here...'}</span>
                 <Badge className='w-fit' variant='secondary'><AtSign /> <span className='pl-1'>{userProfile?.username}</span> </Badge>
-                <span>🤯Learn code with Sk Mernstack </span>
+                {/* <span>🤯Learn  </span>
                 <span>🤯Turing code into fun</span>
-                <span>🤯DM for collaboration</span>
+                <span>🤯DM for collaboration</span> */}
               </div>
             </div>
           </section>
@@ -88,7 +88,7 @@ const Profile = () => {
               displayedPost?.map((post) => {
                 return (
                   <div key={post?._id} className='relative group cursor-pointer'>
-                    <img src={post.image} alt='postimage' className='rounded-sm my-2 w-full aspect-square object-cover' />
+                    <img src={post.image} alt='postimage' className='rounded-sm my-3 w-full aspect-square object-cover' />
                     <div className='absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
                       <div className='flex items-center text-white space-x-4'>
                         <button className='flex items-center gap-2 hover:text-gray-300'>
